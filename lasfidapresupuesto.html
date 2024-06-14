@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/index.css">
+    <title>La Sfida - Presupuesto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- SideBar y Título -->
+    <div class="sidebar" id="sidebar">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" id="logo">
+                    <img src="img/dragon.jpg" alt="">
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li>
+                                <p class="t2">La Sfida Catering<br>& Co.</p>
+                            </li>
+                            <li><a href="index.html" class="nav-list">Nosotros</a></li>
+                            <li><a href="index.html" class="nav-list">Equipo</a></li>
+                            <li><a href="index.html" class="nav-list">Servicios</a></li>
+                            <li><a href="index.html" class="nav-list">Especialidades</a></li>
+                            <li><a href="index.html" class="nav-list">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="t1">La Sfida Catering & Co.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Presupuesto-->
+    <div id="presup">
+        <div class="text-center">
+            <p class="t3">Calcula el presupuesto para tu Evento</p>
+        </div>
+        <div class="container" id="presupuesto">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form id="calculadora-presupuesto" class="align-items-start">
+                        <label for="comens">Cantidad de Comensales</label>
+                        <input type="number" min="1" id="comensales" placeholder="Comensales" required />
+                        <fieldset id="desayuno">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Desayuno
+                            </label>
+                        </fieldset>
+                        <fieldset id="almuerzo">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Almuerzo
+                            </label>
+                        </fieldset>
+                        <fieldset id="merienda">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Merienda
+                            </label>
+                        </fieldset>
+                        <fieldset id="cena">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Cena
+                            </label>
+                        </fieldset>
+                        <fieldset id="torta">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Candy Bar
+                            </label>
+                        </fieldset>
+                        <fieldset id="choco">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Cascada de Chocolate
+                            </label>
+                        </fieldset>
+                        <fieldset id="barra">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Barra
+                            </label>
+                        </fieldset>
+                        <fieldset id="chop">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Choppera
+                            </label>
+                        </fieldset>
+                        <fieldset id="dj">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Dj
+                            </label>
+                        </fieldset>
+                        <fieldset id="seguridad">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Seguridad
+                            </label>
+                            <input type="number" min="0" id="segu" placeholder="Seguridad" />
+                        </fieldset>
+                        <fieldset id="mozos">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Mozos - Camareras
+                            </label>
+                            <input type="number" min="0" id="cam" placeholder="Mozos" />
+                        </fieldset>
+                        <fieldset id="maitre">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Maitre
+                            </label>
+                        </fieldset>
+                        <fieldset id="cocinero">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Cocineros
+                            </label>
+                        </fieldset>
+                        <div id="moviliario">
+                            - Moviliario -
+                            <fieldset id="mesaSillas">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Mesas y Sillas
+                                </label>
+                            </fieldset>
+                            <fieldset id="living">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Living
+                                </label>
+                            </fieldset>
+                            <fieldset id="vajilla">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Vajilla
+                                </label>
+                            </fieldset>
+                            <fieldset id="blancos">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Blancos
+                                </label>
+                            </fieldset>
+                            <div>
+                                <button type="button" id="calcular">
+                                    Calcular Presupuesto
+                                </button>
+                                <button type="button" id="clear">Limpiar</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="resultado"></div>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#serv">Servicios</a></li>
+                <li><a href="#especialidad">Especialidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="elPie">
+            <p class="pie">Powered by <a href="mailto:victotiakropp@yahoo.com.ar">Victoria</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="eh" style="display: none">
+        <h1>Precio del dólar:</h1>
+        <div id="precio-dolar"></div>
+
+        <!-- JSON para referencia -->
+        <script type="application/json" id="json-data">
+    {
+      "compra": "number",
+      "venta": "number",
+      "casa": "string",
+      "nombre": "string",
+      "moneda": "string",
+      "fechaActualizacion": "string"
+    }
+    </script>
+
+        <script>
+            // Obtener el elemento donde queremos mostrar el precio del dólar
+            const precioDolarElement = document.getElementById("precio-dolar");
+
+            // Realizar la solicitud fetch para obtener los datos del precio del dólar
+            fetch("https://dolarapi.com/v1/dolares/blue")
+                .then(response => response.json())
+                .then(data => {
+                    // Actualizar el contenido del elemento con el precio del dólar obtenido de la API
+                    precioDolarElement.innerHTML = `
+          <p>Compra: ${data.compra}</p>
+          <p>Venta: ${data.venta}</p>
+          <p>Casa: ${data.casa}</p>
+          <p>Nombre: ${data.nombre}</p>
+          <p>Moneda: ${data.moneda}</p>
+          <p>Fecha de Actualización: ${data.fechaActualizacion}</p>
+        `;
+                })
+                .catch(error => {
+                    console.error('Error al obtener el precio del dólar:', error);
+                    precioDolarElement.textContent = "Error al obtener el precio del dólar. Por favor, inténtalo de nuevo más tarde.";
+                });
+        </script>
+    </div>
+    <script src="Js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
